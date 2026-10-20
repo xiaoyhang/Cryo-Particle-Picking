@@ -1,0 +1,39 @@
+data:
+  manifest: data/manifest.csv
+  patch_size: 512
+  patches_per_micrograph: 32
+  positive_crop_ratio: 0.7
+  particle_diameter: 108
+  heatmap_sigma: 7.0
+  num_workers: 4
+  augment: true
+
+model:
+  base_channels: 16
+
+training:
+  batch_size: 8
+  epochs: 50
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  loss: focal
+  focal_alpha: 0.75
+  focal_gamma: 2.0
+  seed: 42
+  device: auto
+  resume: null
+
+prediction:
+  overlap: 128
+  confidence_threshold: 0.4
+  nms_distance: 45
+  batch_size: 4
+
+evaluation:
+  matching_distance: 54
+
+output:
+  directory: outputs/unet_baseline
+  save_heatmap: true
+  save_overlay: true
+

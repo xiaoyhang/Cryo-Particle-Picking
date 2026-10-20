@@ -1,0 +1,3 @@
+micrograph_path,coordinates_path,split,dataset_id,particle_diameter,pixel_size
+/cluster/project/cryoppp/10017/micrographs/example.mrc,/cluster/project/cryoppp/10017/ground_truth/particle_coordinates/example.csv,train,10017,108,1.0
+

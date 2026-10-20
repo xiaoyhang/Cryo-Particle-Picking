@@ -1,0 +1,8 @@
+numpy>=1.24
+torch>=2.1
+PyYAML>=6.0
+mrcfile>=1.4
+Pillow>=10.0
+matplotlib>=3.7
+pytest>=7.4
+
